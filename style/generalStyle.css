@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* CSS HEX */
+:root{
+  --cobalt-blue: #1446a0ff;
+  --razzmatazz: #db3069ff;
+  --naples-yellow: #f5d547ff;
+  --beige: #ebebd3ff;
+  --onyx: #3c3c3bff;
+}
+
+html{
+  height: 100%;
+  width: auto;
+  font-family: "Comic Neue", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+body{
+  background: var(--beige);
+}
+
+
+
+/*menu bar*/
+
+#menuBar{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+
+.menubut{
+  margin: 20px;
+  height: auto;
+  width: auto;
+  padding: 15px;
+  border-radius: 20px;
+  background: var(--onyx);
+  color: var(--beige);
+  border: solid 2px var(--onyx);
+}
+
+
+#but0{
+  display: none;
+  background: var(--onyx);
+}
+
+#but2{
+  background: var(--naples-yellow);/*Se cambio i background mi conviene mettere le icon in --onyx, bisogna vedere come organiizzare il sito*/
+}
+
+#but3{
+  background: var(--razzmatazz);
+}
+
+#but4{
+  background: var(--cobalt-blue);
+}
+
+
+#logo {
+  text-decoration: none;
+  font-size: xxx-large;
+  font-weight: 1000;
+  -webkit-text-fill-color: var(--onyx);
+  -webkit-text-stroke: 1px var(--beige);
+  margin: 0%;
+}
+
+
+.icon-menudropdown{
+  height:auto;
+  width:auto;
+  display:block;
+  text-decoration: none;
+  align-content: center;
+}
+
+.icon-hourglass{
+  height:auto;
+  width:auto;
+  display:block;
+  text-decoration: none;
+  align-content: center;
+}
+
+.icon-organization{
+  height:auto;
+  width:auto;
+  display:block;
+  text-decoration: none;
+  align-content: center;
+}
+
+.icon-aboutus{
+  height: auto;
+  width:auto;
+  display:block;
+  text-decoration: none;
+}
+/*
+
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(0deg, var(--razzmatazz), var(--naples-yellow), var(--cobalt-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  margin:15px;
+}
+
+
+*/
+
+
+/*Repsonsive size*/
+
+@media only screen and (max-width: 475px){
+  #logo{
+      font-size: xx-large;
+  }
+
+  #menuBar{
+    visibility:hidden;
+    flex-direction: row;
+
+  }
+
+  #but2{
+    display: none;
+  }
+  #but3{
+    display: none;
+  }
+  #but4{
+    display: none;
+  }
+
+  #but1{
+    visibility: visible;
+  }
+
+  #but0{
+    visibility: visible;
+    display: block;
+    position: fixed;
+    right: 0%;
+  }
+}
+@media only screen and (min-width:500px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width: 1024px){}
+@media only screen and (min-width:1280px){}
+@media only screen and (min-width:1536px){}
