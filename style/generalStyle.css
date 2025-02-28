@@ -65,6 +65,9 @@ body{
   background: var(--cobalt-blue);
 }
 
+a{
+    text-decoration: none;
+}
 
 #logo {
   text-decoration: none;
@@ -121,6 +124,14 @@ h1 {
 
 
 */
+
+
+/*content*/
+
+
+canvas{
+    border-radius: 20px;
+}
 
 
 /*Repsonsive size*/
